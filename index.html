@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/modes.css">
-    <link rel="stylesheet" href="/css/conversion.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <title>AlgEcode</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/modes.css">
+  <link rel="stylesheet" href="/css/conversion.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>AlgEcode</title>
 </head>
 <body class="body-container">
-    <div class="body-container__header">
-        <h1>AlgEcode</h1>
-        <p>Una herramienta innovadora para cifrar y descifrar mensajes mediante algoritmos avanzados basados en matrices. Diseñada para ingenieros y entusiastas de la criptografía, ofrece una interfaz intuitiva y un enfoque matemático robusto para garantizar la confidencialidad de los mensajes de forma rápida y eficiente.</p>
-    </div>
-    <div class="body-container__modes">
-        <p class="body-container__modes-txt">Select the mode</p>
-        <img src="/assets/icon/rightArrow.png" alt="Flecha hacia la derecha">
-        <button class="body-container__modes-btn__code" id="codificar-btn">Codificar</button>
-        <button class="body-container__modes-btn__decode" id="decodificar-btn">Decodificar</button>
-    </div>
-    <div class="body-container__conversion">
-        <section class="body-container__conversion-input">
-            <textarea name="" id="input-txt" class="body-container__conversion-input-txt"></textarea>
-        </section>
-        <section class="body-container__conversion-options">
-            <div class="body-container__conversion-options-background">
-                <button class="body-container__conversion-options-btn__option1">Opcion 1</button>
-                <button class="body-container__conversion-options-btn__option2">Opcion 2</button>
-                <button class="body-container__conversion-options-btn__option3">Opcion 3</button>
-                <button class="body-container__conversion-options-btn__code">Codificar</button>
-            </div>
-        </section>
-        <section class="body-container__conversion-output">
-            <textarea name="" id="input-txt" class="body-container__conversion-output-txt"></textarea>
-            <img src="/assets/icon/copy.png" alt="Copy button" class="copy-icon">
-        </section>
-    </div>
+  <div class="body-container__header">
+    <h1>AlgEcode</h1>
+    <p>Una herramienta innovadora para cifrar y descifrar mensajes mediante algoritmos avanzados basados en matrices. Diseñada para ingenieros y entusiastas de la criptografía, ofrece una interfaz intuitiva y un enfoque matemático robusto para garantizar la confidencialidad de los mensajes de forma rápida y eficiente.</p>
+  </div>
+  <div class="body-container__modes">
+    <p class="body-container__modes-txt">Select the mode</p>
+    <img src="/assets/icon/rightArrow.png" alt="Flecha hacia la derecha">
+    <button class="body-container__modes-btn__code" id="codificar-btn">Codificar</button>
+    <button class="body-container__modes-btn__decode" id="decodificar-btn">Decodificar</button>
+  </div>
+  <div class="body-container__conversion">
+    <section class="body-container__conversion-input">
+      <textarea name="" id="input-txt" class="body-container__conversion-input-txt"></textarea>
+    </section>
+    <section class="body-container__conversion-options">
+      <div class="body-container__conversion-options-background">
+        <button class="body-container__conversion-options-btn__option1">Matriz 2x2</button>
+        <button class="body-container__conversion-options-btn__option2">Matriz 3x3</button>
+        <button class="body-container__conversion-options-btn__option3">Matriz 4x4</button>
+        <button class="body-container__conversion-options-btn__code">Mode</button>
+      </div>
+    </section>
+    <section class="body-container__conversion-output">
+      <textarea name="" id="input-txt" class="body-container__conversion-output-txt"></textarea>
+      <img src="/assets/icon/copy.png" alt="Copy button" class="copy-icon">
+    </section>
+  </div>
+  
+  
+  <script src="/js/app.js"></script>
 </body>
 </html>

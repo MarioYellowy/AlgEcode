@@ -96,8 +96,9 @@
 .body-container__conversion-options-btn__option1:active,
 .body-container__conversion-options-btn__option2:active,
 .body-container__conversion-options-btn__option3:active {
-    transform: scale(0.95);  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    background-color: #4a90e2;  
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .body-container__conversion-options-btn__code {
