@@ -43,11 +43,19 @@
     </section>
     <section class="body-container__conversion-options">
       <div class="body-container__conversion-options-background">
-        <button class="body-container__conversion-options-btn__option1" data-option="1">Matriz 2x2</button>
-        <button class="body-container__conversion-options-btn__option2" data-option="2">Matriz 3x3</button>
-        <button class="body-container__conversion-options-btn__option3" data-option="3">Matriz 4x4</button>
+        <div id="matrix-options" class="matrix-options-container" style="display: none;">
+          <button class="body-container__conversion-options-btn__option1" data-option="1">Matriz 2x2</button>
+          <button class="body-container__conversion-options-btn__option2" data-option="2">Matriz 3x3</button>
+          <button class="body-container__conversion-options-btn__option3" data-option="3">Matriz 4x4</button>
+      </div>
+        <div id="key-matrix-input" class="key-matrix-input" style="display: none;">
+          <label for="matrix-txt">Ingresa la matriz para decodificar:</label>
+          <textarea class="key-matrix-input-txt" id="matrix-txt" placeholder="Ejemplo: [1, 2; 3, 4]"></textarea>
+        </div>
         <button class="body-container__conversion-options-btn__code">Mode</button>
       </div>
+      
+
     </section>
     <section class="body-container__conversion-output">
       <textarea name="" id="input-txt" class="body-container__conversion-output-txt"></textarea>
@@ -55,7 +63,7 @@
     </section>
   </div>
   
-  <script src="/js/app.js"></script>
-  <script src="/js/details.js"></script>
+  <script src="/js/app.js" defer></script>
+  <script src="/js/details.js" defer></script>
 </body>
 </html>

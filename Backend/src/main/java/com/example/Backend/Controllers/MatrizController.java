@@ -27,7 +27,6 @@ public class MatrizController {
             matrixOption = ((Number) payload.get("matrix")).intValue();
         }
 
-
         int keySize;
         switch (matrixOption) {
             case 1:
@@ -121,14 +120,12 @@ public class MatrizController {
 
     @GetMapping("/detalles")
     public ResponseEntity<Map<String, Object>> getDetalles() {
-        // Verificar si hay datos almacenados de una operación previa
         if (lastKeyMatrix == null) {
             Map<String, Object> errorResponse = new HashMap<>();
             errorResponse.put("error", "No se ha realizado ninguna operación todavía.");
             return ResponseEntity.badRequest().body(errorResponse);
         }
 
-        // Preparar la matriz en formato de lista para el response
         List<List<Integer>> matrizList = new ArrayList<>();
         for (int i = 0; i < lastKeyMatrix.length; i++) {
             List<Integer> row = new ArrayList<>();
@@ -138,7 +135,6 @@ public class MatrizController {
             matrizList.add(row);
         }
 
-        // Devolver los detalles de la última operación
         Map<String, Object> response = new HashMap<>();
         response.put("determinante", lastDeterminante);
         response.put("matriz", matrizList);

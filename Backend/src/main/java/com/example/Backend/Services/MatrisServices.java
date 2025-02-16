@@ -115,7 +115,7 @@ public class MatrisServices {
     public static int[][] calculateInverseMatrix(int[][] matrix) {
         int size = matrix.length;
         int det = calculateDeterminant(matrix, size);
-        det = ((det % 26) + 26) % 26; // Asegurar que el determinante sea positivo
+        det = ((det % 26) + 26) % 26;
         
         int detInv = modInverse(det, 26);
         int[][] adj = calculateAdjMatrix(matrix);
