@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
       button.addEventListener("click", function() {
         matrixOptionButtons.forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
-        matrixOption = button.textContent.trim();
+        matrixOption = button.getAttribute("data-option");
       });
     });
   
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const payload = {
         mode: mode,
         text: textInput,
-        matrix: matrixOption 
+        matrix: parseInt(matrixOption, 10) 
       };
   
       fetch("http://localhost:8080/api/convert", {
