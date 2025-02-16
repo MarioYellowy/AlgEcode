@@ -4,6 +4,8 @@ import java.util.Random;
 
 import org.springframework.stereotype.Service;
 
+import static sun.security.krb5.internal.ktab.KeyTabConstants.keySize;
+
 @Service
 public class MatrisServices {
     // Función para preparar el texto (convertir a mayúsculas y eliminar caracteres no alfabéticos)

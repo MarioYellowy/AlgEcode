@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         matrix: matrixOption 
       };
   
-      fetch("/api/convert", {
+      fetch("http://localhost:8080/api/convert", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
